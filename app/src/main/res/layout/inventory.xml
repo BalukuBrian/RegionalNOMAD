@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginTop="1dp"
+    android:fillViewport="true"    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="45dp"
+            android:gravity="center"
+            android:text="@string/inventory"
+            android:textSize="40sp"
+            card_view:layout_constraintBottom_toTopOf="@+id/date_inventory"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/date_inventory"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/enter_current_date"
+            android:inputType="text"
+            card_view:layout_constraintBottom_toTopOf="@+id/machine_name_inventory"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="1.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/machine_name_inventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/enter_machine_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            card_view:layout_constraintBottom_toTopOf="@+id/equipment_type_inventory"
+            card_view:layout_constraintEnd_toEndOf="@+id/date_inventory"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="@+id/date_inventory"
+            card_view:layout_constraintTop_toBottomOf="@+id/date_inventory" />
+
+        <EditText
+            android:id="@+id/equipment_type_inventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/enter_machine_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            card_view:layout_constraintBottom_toTopOf="@+id/inventory_number"
+            card_view:layout_constraintEnd_toEndOf="@+id/machine_name_inventory"
+            card_view:layout_constraintStart_toStartOf="@+id/machine_name_inventory"
+            card_view:layout_constraintTop_toBottomOf="@+id/machine_name_inventory" />
+
+        <EditText
+            android:id="@+id/inventory_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter Inventory Number"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            card_view:layout_constraintBottom_toTopOf="@+id/serial_number_inventory"
+            card_view:layout_constraintEnd_toEndOf="@+id/equipment_type_inventory"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="@+id/equipment_type_inventory"
+            card_view:layout_constraintTop_toBottomOf="@+id/equipment_type_inventory" />
+
+        <EditText
+            android:id="@+id/serial_number_inventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter Serial Number"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            card_view:layout_constraintBottom_toTopOf="@+id/manufacturer_inventory"
+            card_view:layout_constraintEnd_toEndOf="@+id/inventory_number"
+            card_view:layout_constraintStart_toStartOf="@+id/inventory_number"
+            card_view:layout_constraintTop_toBottomOf="@+id/inventory_number" />
+
+        <EditText
+            android:id="@+id/manufacturer_inventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter name of Manufacturer"
+            android:inputType="text"
+            card_view:layout_constraintBottom_toTopOf="@+id/date_of_issue_inventory"
+            card_view:layout_constraintEnd_toEndOf="@+id/serial_number_inventory"
+            card_view:layout_constraintStart_toStartOf="@+id/serial_number_inventory"
+            card_view:layout_constraintTop_toBottomOf="@+id/serial_number_inventory" />
+
+
+        <EditText
+            android:id="@+id/date_of_issue_inventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/enter_date_of_issue"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            card_view:layout_constraintBottom_toTopOf="@+id/department_inventory"
+            card_view:layout_constraintEnd_toEndOf="@+id/manufacturer_inventory"
+            card_view:layout_constraintStart_toStartOf="@+id/manufacturer_inventory"
+            card_view:layout_constraintTop_toBottomOf="@+id/manufacturer_inventory" />
+
+        <EditText
+            android:id="@+id/department_inventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter Department"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            card_view:layout_constraintBottom_toTopOf="@+id/state_of_machine_inventory"
+            card_view:layout_constraintEnd_toEndOf="@+id/date_of_issue_inventory"
+            card_view:layout_constraintStart_toStartOf="@+id/date_of_issue_inventory"
+            card_view:layout_constraintTop_toBottomOf="@+id/date_of_issue_inventory" />
+
+        <EditText
+            android:id="@+id/state_of_machine_inventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter State of Machine"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            card_view:layout_constraintBottom_toTopOf="@+id/last_service_inventory"
+            card_view:layout_constraintEnd_toEndOf="@+id/department_inventory"
+            card_view:layout_constraintStart_toStartOf="@+id/department_inventory"
+            card_view:layout_constraintTop_toBottomOf="@+id/department_inventory" />
+
+        <EditText
+            android:id="@+id/last_service_inventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="EnterLast Service Date"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            card_view:layout_constraintBottom_toTopOf="@+id/problems_faced_before_inventory"
+            card_view:layout_constraintEnd_toEndOf="@+id/state_of_machine_inventory"
+            card_view:layout_constraintStart_toStartOf="@+id/state_of_machine_inventory"
+            card_view:layout_constraintTop_toBottomOf="@+id/state_of_machine_inventory" />
+
+        <EditText
+            android:id="@+id/problems_faced_before_inventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter Problems Faced before"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            card_view:layout_constraintBottom_toTopOf="@+id/usage_inventory"
+            card_view:layout_constraintEnd_toEndOf="@+id/last_service_inventory"
+            card_view:layout_constraintStart_toStartOf="@+id/last_service_inventory"
+            card_view:layout_constraintTop_toBottomOf="@+id/last_service_inventory" />
+
+        <EditText
+            android:id="@+id/usage_inventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:hint="Enter Usage"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="@+id/problems_faced_before_inventory"
+            card_view:layout_constraintStart_toStartOf="@+id/problems_faced_before_inventory"
+            card_view:layout_constraintTop_toBottomOf="@+id/problems_faced_before_inventory" />
+
+
+        <Button
+            android:id="@+id/save_inventory"
+            android:layout_width="127dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/save"
+            android:textAppearance="?android:textAppearanceLarge"
+            card_view:layout_constraintBottom_toTopOf="@+id/date_inventory"
+            card_view:layout_constraintEnd_toStartOf="@+id/upload_inventory"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/upload_inventory"
+            android:layout_width="145dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="7dp"
+            android:gravity="center"
+            android:text="@string/upload"
+            android:textAppearance="?android:textAppearanceLarge"
+            card_view:layout_constraintBottom_toTopOf="@+id/date_inventory"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/save_inventory"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

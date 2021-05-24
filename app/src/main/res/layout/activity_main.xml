@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="277dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/login_page"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/enter_your_id_number"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/incharge_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/incharge_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/name_of_incharge"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/health_facility_login"
+        app:layout_constraintEnd_toEndOf="@+id/id_login"
+        app:layout_constraintStart_toStartOf="@+id/id_login"
+        app:layout_constraintTop_toBottomOf="@+id/id_login" />
+
+    <EditText
+        android:id="@+id/health_facility_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/name_of_health_facility"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/hospital_login"
+        app:layout_constraintEnd_toEndOf="@+id/incharge_login"
+        app:layout_constraintStart_toStartOf="@+id/incharge_login"
+        app:layout_constraintTop_toBottomOf="@+id/incharge_login" />
+
+    <EditText
+        android:id="@+id/hospital_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/name_of_hospital"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/regional_referral_login"
+        app:layout_constraintEnd_toEndOf="@+id/health_facility_login"
+        app:layout_constraintStart_toStartOf="@+id/health_facility_login"
+        app:layout_constraintTop_toBottomOf="@+id/health_facility_login" />
+
+    <EditText
+        android:id="@+id/regional_referral_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="237dp"
+        android:hint="@string/name_of_hospital"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/hospital_login"
+        app:layout_constraintStart_toStartOf="@+id/hospital_login"
+        app:layout_constraintTop_toBottomOf="@+id/hospital_login" />
+
+    <Button
+        android:id="@+id/login_button_login"
+        android:layout_width="128dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="155dp"
+        android:text="@string/log_in"
+        android:textAppearance="?android:textAppearanceLarge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regional_referral_login"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

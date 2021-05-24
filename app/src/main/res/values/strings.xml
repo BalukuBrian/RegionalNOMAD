@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Regional NOMAD</string>
+    <string name="enter_your_id_number">Enter your ID Number</string>
+    <string name="login_page">LOGIN PAGE</string>
+    <string name="name_of_incharge">Name of Incharge</string>
+    <string name="log_in">Log in</string>
+    <string name="name_of_hospital">Name of Hospital</string>
+    <string name="name_of_health_facility">Name of Health Facility</string>
+    <string name="inventory">INVENTORY</string>
+    <string name="enter_current_date">Enter Current Date</string>
+    <string name="enter_machine_name">Enter Machine Name</string>
+    <string name="save">SAVE</string>
+    <string name="upload">UPLOAD</string>
+    <string name="enter_date_of_issue">Enter Date of Issue</string>
+</resources>
